@@ -1,0 +1,87 @@
+$width:20vw;
+
+body{
+    background-image: linear-gradient(to right , rgba(0, 176, 0, 0.549)  , rgba(255, 99, 71, 0.358) );
+}
+
+
+.__mainContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        background-color: rgb(190, 237, 2);
+        padding: 0.2rem;
+        border-radius: 2rem;
+    }
+
+    .GameContainer{
+
+        width:  $width;
+        min-height: 15rem;
+        min-width:  15rem;
+        height: $width;
+        border: 1px solid #e70000;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1vmax;
+        padding: 10px;
+        border-radius: 0.5rem;
+        background-color: #eb9393;
+
+
+        .cell{
+            border: 1px solid #fefffd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(15px ,5vmin ,35px);   
+            border-radius: 2rem; 
+        }
+    }
+
+
+    .winnerDashBoard{
+        background-color: #a76e6e;
+        min-width: 15rem;
+
+        width:  $width;
+        color: white;
+        font-size: large;
+
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        border-radius: 1rem 2rem;
+
+    }
+
+    .winner{
+        justify-content: space-around;
+        color: white;
+        font-size: large;
+        background-color: #fb4747;
+        background-image: linear-gradient(to right, rgb(130, 26, 234) 10% ,tomato 80% );
+        button{
+            border-radius: 1rem;
+            padding: 0.4rem 1rem;
+            background-color: purple;
+            color: white;
+            transition: all 1s;
+
+            &:hover{
+            background-color: rgb(245, 240, 240);
+            color: rgb(255, 1, 1);
+
+
+            }
+            
+        }
+    }
+}
